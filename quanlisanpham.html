@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SMARTKINGDOM</title>
+    <style>
+        *{
+            padding: 0 auto;
+            margin: 0 auto;
+        }
+        body{
+            background-color:#ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 26px;
+        }
+        .head{
+            display: flex;
+            width: 100%;
+            height: 130px;
+            background-color: rgb(3, 11, 57);
+            padding-top: 15px;
+            text-align: center;
+        }
+        .main{
+            width: 100%;
+            height: 860px;
+            background-color: #ffffff;
+            display: flex;
+        }
+        .menu{
+            width: 20%;
+            height: 859px;
+            background-color: #141414;
+        }
+        .btnMenu a{
+            text-decoration: none;
+            color: #ffffff;
+            line-height: 50px;
+            padding-left: 15px;
+        }
+        .btnMenu:hover{
+            background-color: #515151;
+        }
+        .btnMenu:active{
+            background-color: rgb(3, 11, 57);
+        }
+        .btnMenu{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(35, 35, 42);
+            border: 1px solid #8c8c8c;
+            cursor: pointer; 
+        }
+        .btnMenu ul li{
+            font-size: 20px;
+            padding: 5px;
+            list-style: none;
+        }
+        p{
+            margin-left: 20px;
+            padding-top: 5px;
+            color: #dcd9d9;
+        }
+        .staff{
+            width: 80%;
+            height: 858px;
+            background-color: rgb(174, 174, 174);
+            border: 1px solid rgb(240, 240, 240);
+        }
+        #txtSearch{
+            width: 350px;       
+            height: 30px;
+            background-color: #dcd9d9;
+            border-radius: 7px;
+            border: 2px solid #9a9797;
+            color: #000;
+            font-size: 14px;
+        }
+        #btnSearch{
+            width: 40px;
+            height: 30px;
+            border-radius: 7px;
+            background-color: #074075;
+            cursor: pointer;
+            color: aliceblue;
+        }
+        .staff-search{
+            width: 100%;
+            height: 40px;
+            display: flex;
+            background-color: #2a2828;
+        }
+        #addnew{
+            height: 30px;
+            background-color: rgb(188, 188, 188);
+            border-radius: 7px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        .menu-smartphone{
+            width: 90%;
+            height: 50px;
+            background-color: #8c8c8c;
+            border-radius: 40px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .menu-smartphone ul a{
+            text-decoration: none;
+        }
+        .menu-smartphone ul{
+            display: flex;
+            text-align: center;
+        }
+        .menu-smartphone ul li{
+            list-style: none;
+            line-height: 50px;
+            color: #ffffff;
+        }
+        table, th, td {
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        .smartphone{
+            margin-top: 5px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        th{
+            font-size: 23px;
+            height: 50px;
+            background-color: #858282;
+        }
+        td{
+            height: 45px;
+        }
+        .footer{
+            width: auto;
+            height: auto;
+            text-align: center;
+            background-color: rgb(3, 11, 57);
+            padding: 8px;
+        }
+        .footer span a{
+            padding: 30px;
+            text-align: center;
+            text-decoration: none;
+            color: #404040;
+        }
+        .txt{
+            font-size: 20px;
+        }
+        h2{
+            color: #6c6262;
+            font-size: 20px;
+            padding-top: 10px;
+        }
+        a.txt:hover{
+            color: #dcdcdc;
+        }
+        a.txt:active{
+            color: #ac0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="logo"> 
+            <a  href="quanlisanpham.html"><img  src="img/logosmart.png" alt="" width="150px"></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="menu">
+            <div class="btnMenu">
+                <a href="quanlihethong.html"> QUẢN LÝ HỆ THỐNG</a>
+            </div>
+            <div class="btnMenu">
+                <a href="quanlisanpham.html"> QUẢN LÝ SẢN PHẨM</a>
+            </div>
+        </div>
+        <div class="staff">
+            <div class="staff-search">
+                <p>Điện thoại</p>
+                <div class="search">
+                    <input id="txtSearch" type="search" placeholder="Tên điện thoại ....">
+                    <button id="btnSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <div class="menu-smartphone">
+            <ul>
+                <a href=""><li>Tất cả</li></a>
+                <a href=""><li>Apple</li></a>
+                <a href=""><li>Samsung</li></a>
+                <a href=""><li>Xiaomi</li></a>
+                <a href=""><li>Oppo</li></a>
+                <a href=""><li>Vivo</li></a>
+                <a href=""><li>Realme</li></a>
+            </ul>
+        </div>
+            <div class="staff-smartphone" style="overflow-x: hidden;overflow-y: scroll;width: 100%;height: 460px;">
+                <table class="smartphone">
+                    <tr>
+                        <th id="txtMaNV" style="width: 10%;">Mã SP</th>
+                        <th id="txtTenNV" style="width: 22%;">Tên SP</th>
+                        <th id="txtNgaysinh" style="width: 10%;">Thương hiệu</th>
+                        <th id="txtGioitinh" style="width: 7%;">Số lượng</th>
+                        <th id="txtDiachi" style="width: 30%;">Thông số</th>
+                        <th id="txtSdt" style="width: 13%;">Giá</th>
+                        <th id="txtCapnhat" style="width: 8%;">Chi tiết</th>
+                    </tr>
+                    
+                </table>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span>
+            <a class="txt" href="">Liên hệ bản quyền</a>
+            <a class="txt" href="">Chính sách bảo mật</a>
+        </span>
+        <h2>Copyright © by SMARTKINGDOM</h2>
+    </div>
+</body>
+</html>
