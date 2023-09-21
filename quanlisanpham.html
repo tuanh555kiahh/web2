@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/base.css">
     <title>SMARTKINGDOM</title>
     <style>
         *{
@@ -168,16 +169,16 @@
 <body>
     <div class="head">
         <div class="logo"> 
-            <a  href="quanlisanpham.html"><img  src="img/logosmart.png" alt="" width="150px"></a>
+            <a  href="quanlisanpham.html"><img  src="img/looogo.png" alt="" width="150px"></a>
         </div>
     </div>
     <div class="main">
         <div class="menu">
             <div class="btnMenu">
-                <a href="quanlihethong.html"> QUẢN LÝ HỆ THỐNG</a>
+                <a href="quanlisanpham.html"> QUẢN LÝ SẢN PHẨM</a>
             </div>
             <div class="btnMenu">
-                <a href="quanlisanpham.html"> QUẢN LÝ SẢN PHẨM</a>
+                <a href="quanlihethong.html"> QUẢN LÝ HỆ THỐNG</a>
             </div>
         </div>
         <div class="staff">
@@ -223,5 +224,29 @@
         </span>
         <h2>Copyright © by SMARTKINGDOM</h2>
     </div>
+    <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-body">
+            <div id="formAddnew">
+            <div class="modal-body-header">
+                <h1>Thêm nhân viên</h1>
+            </div>
+            <div class="modal-body-form">
+                <input id="txtAddnew" class="txtMaNV" type="text" placeholder="Mã nhân viên" required>
+                <input id="txtAddnew" class="txtTenNV" type="text" placeholder="Tên nhân viên" required>
+                <input id="txtAddnew" class="txtNgaysinh" type="text" placeholder="Ngày sinh" required>
+                <input id="txtAddnew" class="txtGioitinh" type="text" placeholder="Giới tính" required>
+                <input id="txtAddnew" class="txtDiachi" type="text" placeholder="Địa chỉ" required>
+                <input id="txtAddnew" class="txtSdt" type="text" placeholder="Số điện thoại" required>
+                <input id="txtAddnew" class="txtTaikhoan" type="text" placeholder="Tài khoản" required>
+                <input id="txtAddnew" class="txtMatkhau" type="text" placeholder="Mật khẩu" required>
+            <div class="modal-body-footer">
+                <input id="btnClose" type="submit" value="Hủy">
+                <input id="btnAddnew" type="submit" value="Thêm">
+            </div> 
+        </div>   
+        </div>
+    </div>
+
 </body>
 </html>

@@ -14,16 +14,18 @@
               font-family: 'Poppins',sans-serif;
           }
           body{
-              background: #9a9797;
               overflow: hidden;
           }
+          .container{
+            width: 100%;
+            height: 100%;
+          }
           .head{
-              width: 0 auto;
-              height: 130px;
-              background-color: rgb(3, 11, 57);
+              width: 100%;
+              height: 160px;
+              background-color: #cfcc10;
               padding-top: 15px;
               text-align: center;
-
           }
           .wrapper{
               max-width: 380px;
@@ -32,13 +34,13 @@
               border-radius: 5px;
               margin-top: 100px;
               margin-bottom: 80px;
+              border: 1px solid #cfcc10;
               box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
           }
           .wrapper .title{
               height: 90px;
-              background: rgb(3, 11, 57);
+              background: #cfcc10;
               border-radius: 5px 5px 0 0;
-              color: #fff;
               font-size: 30px;
               font-weight: 600;
               display: flex;
@@ -59,7 +61,7 @@
               outline: none;
               padding-left: 60px;
               border-radius: 5px;
-              border: 1px solid lightgrey;
+              border: 1px solid lightgray;
               font-size: 16px;
               transition: all 0.3s ease;
           }
@@ -74,10 +76,9 @@
               position: absolute;
               width: 47px;
               height: 100%;
-              color: #fff;
               font-size: 18px;
-              background: rgb(3, 11, 57);
-              border: 1px solid rgb(3, 11, 57);
+              background: #cfcc10;
+              border: 1px solid #cfcc10;
               border-radius: 5px 0 0 5px;
               display: flex;
               align-items: center;
@@ -87,7 +88,7 @@
               margin: -8px 0 20px 0;
           }
           .wrapper form .pass a{
-              color: rgb(3, 11, 57);
+            color: #000;
               font-size: 17px;
               text-decoration: none;
           }
@@ -95,15 +96,14 @@
               text-decoration: underline;
           }
           #btnLogin{
-              color: #fff;
               font-size: 20px;
               width: 330px;
               height: 50px;
               font-weight: 500;
               padding-left: 0px;
               border-radius: 5px;
-              background: rgb(3, 11, 57);
-              border: 1px solid rgb(3, 11, 57);
+              background: #cfcc10;
+              border: 1px solid #cfcc10;
               cursor: pointer;
           }
           #btnLogin:hover{
@@ -115,25 +115,25 @@
               font-size: 17px;
           }
           .footer{
-              width: auto;
+              width: 100%;
               height: auto;
               text-align: center;
-              background-color: rgb(3, 11, 57);
+              background-color: #cfcc10;
               padding: 8px;
           }
           .footer span a{
               padding: 30px;
               text-align: center;
               text-decoration: none;
-              color: #404040;
+              color: #000000;
           }
           h2{
-              color: #6c6262;
+            color: #6e6d6d;
               font-size: 20px;
               padding-top: 10px;
           }
           a.txt:hover{
-              color: #dcdcdc;
+              color: red;
           }
           a.txt:active{
               color: #ac0000;
@@ -143,7 +143,7 @@
 <body>
     <div class="container">
         <div class="head"> 
-            <a  href="index.html"><img  src="img/logosmart.png" alt="" width="150px"></a>
+            <a  href=""><img  src="img/looogo.png" alt="" width="150px"></a>
         </div>
         <div class="wrapper">
             <div class="title"><span>ĐĂNG NHẬP</span></div>
@@ -156,7 +156,7 @@
                     <i class="fas fa-lock"></i>
                     <input id="txtPassword" type="password" placeholder="Mật khẩu" required>
                 </div>
-                <div class="pass"><a href="#">Đặt lại mật khẩu?</a></div>
+                <div class="pass"><a href="ResetPassword.html">Đặt lại mật khẩu?</a></div>
                 <input id="btnLogin" type="submit" value="Đăng nhập" >
             </form>
         </div>
